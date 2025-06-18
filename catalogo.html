@@ -26,17 +26,25 @@
         </div>
     </div>
   </nav>
-
-  <!-- Título principal -->
-  <div class="container text-center mt-4">
-    <h1>Catálogo</h1>
+<!-- Sección Catálogo -->
+<section class="container py-5">
+  <div class="position-relative text-center mb-4">
+    <h1 class="mb-0">Catálogo</h1>
+    <button class="btn btn-carrito position-absolute end-0 top-50 translate-middle-y" onclick="mostrarCarrito()">
+      <strong>🛒 Carrito</strong>
+    </button>
   </div>
 
-  <!-- Botón calcular y total (esquina superior derecha) -->
-  <div class="container d-flex justify-content-end align-items-center mb-4 mt-4">
-    <button class="btn btn-dark me-3" onclick="">$</button>
-    <h5 class="mb-0">Total: $<span id="total">0</span></h5>
+  <!-- Contenedor del carrito -->
+  <div id="carrito-container">
+    <h5 class="text-center mb-3">🛒 Mi Carrito</h5>
+    <ul id="carrito-lista" class="list-group mb-3"></ul>
+    <p><strong>Total:</strong> $<span id="total">0</span></p>
+    <button class="btn btn-sm btn-danger w-100" onclick="vaciarCarrito()">Vaciar carrito</button>
   </div>
+</section>
+
+  <!-- Sección de productos -->
 
   <!-- Ropa Masculina -->
   <div class="container">
