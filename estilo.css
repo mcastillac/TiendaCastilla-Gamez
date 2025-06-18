@@ -184,3 +184,25 @@ button.btn.btn-dark:hover {
   object-fit: contain;
   margin-top: -2px;       /* Ajuste fino opcional */
 }
+
+#carrito-container {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#carrito-container.visible {
+  display: block;
+}
+
+.btn-carrito {
+  margin-bottom: 15px;
+}
